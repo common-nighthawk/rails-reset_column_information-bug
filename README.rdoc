@@ -1,3 +1,5 @@
 == README
 
 run `rake db:drop db:create db:migrate`
+
+You will see that the Animal has a greeting, but none of the other objects do.

@@ -2,7 +2,7 @@ class AddSoundToAnimalsAndData < ActiveRecord::Migration
   def change
     add_column :animals, :greeting, :string
 
-    # Animal.reset_column_information
+    Animal.reset_column_information
 
     Animal.find_by(type: nil).update_attributes(greeting: 'im an animal')
     Animal.find_by(type: 'Bird').update_attributes(greeting: 'im a bird')
